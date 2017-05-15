@@ -60,3 +60,5 @@ so the Execution Context gives the Globla Object, 'this', Outer Environment
 Execution Context: Creation and Hoistinig
 
 JS and Undefined:
+
+Execution Context: Code Execution
