@@ -1,0 +1,37 @@
+JavaScript:
+Three main component:
+1.Syntax Parser
+A program that reads your code and determine what it does and its grammar is valid or not.
+2.Execution context
+A Wrapper to help manage the code that is running.
+There are lot of lexical environments which one currently runnig is managed via
+execution context.
+It can contain things beyong what you have written in the code.
+3.lexical Environment
+Where something sits physically in the code that you write
+Lexical means to "having to do with Words or Grammar". A lexical Environmnet exits in a
+programing language in which you write something is important.
+Where a piece of code or a varibale is in the code and what surrounds it.
+
+Objects in JavaScript:
+Collection of Name(key)/Value pair.
+Name(key)/Value pair:
+A name which maps to a unique value
+Address:
+    {
+      Street: 'Main',
+      Number: 100
+      Apartment:
+      {
+      Floor: 3,
+      Number: 301
+      }
+    }
+In the above example Address thats a name and its value is an Object(Collection of
+Name/Value Pair) and Apartment has its Value as an Object.
+
+Global Environment/Global Object:
+The JavaScript Engine Wraps the code using an Global Execution Context.
+The Global Execution Context Creates a Global Object and a Special Variable called
+"this" . The JavaScript Engine creates these two things when the code is wrapped using the
+Global Execution Context.
