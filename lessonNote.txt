@@ -57,7 +57,7 @@ function but when executing at the base level there's no Outer Environment.
 
 so the Execution Context gives the Global Object, 'this', Outer Environment
 
-Execution Context: Creation and Hoisting
+Execution Context: Creation and Hoisting Phase
 Execution Context is created in 2 phases in the first phase called the creation phase in which
 regards to the global context a Global Object, 'this', Outer Environment is created by the
 Execution context then when the parser goes thru' the code it allocate the memory space/
@@ -69,4 +69,22 @@ but for the functions the whole function is available.
 JS and Undefined:
 undefined is a keyword in JS. Refer undefined.js
 
-Execution Context: Code Execution
+Execution Context: Code Execution Phase
+Following the creation phase then the code execution phase executes the code line by line.
+And perform all the operation and assignment.
+
+Single Threaded, Synchronous Execution:
+one command at a time.
+
+Function invocation and Execution Stack:
+executeStack.js
+When the js file started executing in the creation phase of Global Execution it sets memory
+for the variables and assigned it to undefined and then sets memory for the functions. Then
+in the code execution when it sees the function call it creates an Execution context for the
+function and place it on top of the Global Execution context and starts execution its code if
+theres any function call in that context it will create another Execution context for that
+function and place it on top of the stack so when all the code of the top execution context
+got finished it got popped out of the stack and continue with below one. (same like activation
+chain in java).
+
+Functions, Context, Variable Environment:
