@@ -88,3 +88,5 @@ got finished it got popped out of the stack and continue with below one. (same l
 chain in java).
 
 Functions, Context, Variable Environment:
+Where the variable live and how they relate to each other in memory.
+scope of variable refer scope.js
