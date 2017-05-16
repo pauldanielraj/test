@@ -138,3 +138,52 @@ Objects in JS have - Primitive property, Object property, Function property.
 refer object.js for nore details into objects in JS
 
 ----------------------------------------------------------------------------------
+Object literal, Object constructor, Constructor pattern
+
+in Js object and Functions are like.
+
+function fruit(name, color, shape){
+this.name = name;
+this.color = color;
+this.shape = shape;
+
+this.describe = function(){
+
+return "A " + this.name + "is of color " + this.color + " and has the shape of " + this.shape;
+}
+}
+
+var apple = new fruit('apple', 'red', 'round');
+var melon = new fruit('melon', 'green', 'round');
+console.log(apple.describe);
+----------------------------------------------------------------------------------
+
+Arrays of objects:
+
+var users = [
+
+{
+name:'Paul',
+age:23,
+},
+{
+name:'Danny',
+age:26,
+},
+{
+name:'raj',
+age:27,
+}
+];
+
+console.log(users[0].name);
+----------------------------------------------------------------------------------
+Events: onclick, onmouseover, onmouseout, onload
+innerHTML to change the text
+
+get the id of any elment by document.getElementById...
+var heading = document.getElementById('heading');
+heading.innerHTML('new text');
+id.innerHTML = Date(); // to show time
+----------------------------------------------------------------------------------
+Forms

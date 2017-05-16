@@ -11,10 +11,13 @@ var Danny = {firstName:"Paul Daniel Raj",
                street:"157 Bull Hill Lane",
                city:"West Haven",
                code:"06516"
-             }};
+             },
+           fullName: function(){
+             return this.firstName + " " + this.lastName;
+           }};
 
 function greet(person){
-console.log("Hello " + person.firstName);
+console.log("Hello " + person.fullName());
 }
 
 greet(Danny);
