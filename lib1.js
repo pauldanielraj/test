@@ -1,0 +1,1 @@
+var myLibraryName = 'lib1';

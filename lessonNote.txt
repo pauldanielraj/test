@@ -93,3 +93,48 @@ scope of variable refer scope.js
 
 scope chain:
 the reference to outer Environment.that depends on the lexical environment. refer scope.js
+
+Scope, ES6, let:
+scope is where a variable is available in your code. And if its truly the same variable, or
+a new copy.
+
+In ES6 we can use let to declare a varibale to achieve block scoping.
+if a varibale is declared using let during the execution phase as usual its been placed in
+memory and assigned to undefined but when you try to use it before the assignment for that
+varibale is executed the JS Engine will throw an error. And also if let is used inside a block
+that variable is availabe only inside the block and at the time of execution.
+
+Event Queue:
+Refer event.js in that how JS handles events placed by the browser to the event queue.
+The JS will execute the event once the execution stack is empty. so any long running function
+will slow down the execution of the event.
+
+Types and JS:
+JS is dynamically typed language. it means you dont tell the JS Engine what type of data
+a variable holds, JS Engine figures it outr while your code is running.
+Variables can hold different types of values because its all figured out during execution
+
+Primitive Data Types:
+undefined, null, boolean, number, string, symbol (used in ES6)
+
+Opeartors:
+Operator is a function that takes 2 parameter in case + abd return the result.uses infix
+
+Operator Precedence, Associativity:
+Which operator function gets called first.Higher precedence wins.
+left to right or right to left.
+
+Coercion:
+converting a value from one typr to another
+
+using === prevent coercion when comapring two varibale eg ; equal.js
+the || operator will return the value which can be coerced to ture. refer default.js
+
+refer App.js, lib1.js, lib2.js
+
+Objects and Functions:
+objects and the dot
+Objects in JS have - Primitive property, Object property, Function property.
+refer object.js for nore details into objects in JS
+
+----------------------------------------------------------------------------------
