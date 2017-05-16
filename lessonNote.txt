@@ -6,15 +6,15 @@ A program that reads your code and determine what it does and its grammar is val
 
 2.Execution context
 A Wrapper to help manage the code that is running.
-There are lot of lexical environments which one currently runnig is managed via
+There are lot of lexical environments which one currently running is managed via
 execution context.
-It can contain things beyong what you have written in the code.
+It can contain things beyond what you have written in the code.
 
 3.lexical Environment
 Where something sits physically in the code that you write
-Lexical means to "having to do with Words or Grammar". A lexical Environmnet exits in a
+Lexical means to "having to do with Words or Grammar". A lexical Environment exits in a
 programing language in which you write something is important.
-Where a piece of code or a varibale is in the code and what surrounds it.
+Where a piece of code or a variable is in the code and what surrounds it.
 
 Objects in JavaScript:
 Collection of Name(key)/Value pair.
@@ -43,22 +43,30 @@ Global Execution Context.
 run the code in test.html
 The syntax Parser kicks in and then the JavaScript Engine creates the Execution context
 which gives Global Object and the variable 'this'. Now type 'this' in your browser console
-to see the Global Object 'window'. each tab in the browser is sepaate Execution context hence
+to see the Global Object 'window'. each tab in the browser is separate Execution context hence
 contains its own Global Object.
 
 Global:
 In Js it means "Not inside a Function"
-Your Variable and functions whne lxically not siiting inside a function can be accessed
+Your Variable and functions when lexically not siting inside a function can be accessed
 using the Global Object
 
 Outer Environment:
-when you are executing code inside a functio the Outer Enviroment is the code outside the
+when you are executing code inside a function the Outer Environment is the code outside the
 function but when executing at the base level there's no Outer Environment.
 
-so the Execution Context gives the Globla Object, 'this', Outer Environment
+so the Execution Context gives the Global Object, 'this', Outer Environment
 
-Execution Context: Creation and Hoistinig
+Execution Context: Creation and Hoisting
+Execution Context is created in 2 phases in the first phase called the creation phase in which
+regards to the global context a Global Object, 'this', Outer Environment is created by the
+Execution context then when the parser goes thru' the code it allocate the memory space/
+location for the variable and Functions and this phenomenon is called the Hoisting.
+
+And the initial value assigned to the variable in the memory by the JS Engine is 'undefined'
+but for the functions the whole function is available.
 
 JS and Undefined:
+undefined is a keyword in JS. Refer undefined.js
 
 Execution Context: Code Execution
