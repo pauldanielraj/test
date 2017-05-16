@@ -90,3 +90,6 @@ chain in java).
 Functions, Context, Variable Environment:
 Where the variable live and how they relate to each other in memory.
 scope of variable refer scope.js
+
+scope chain:
+the reference to outer Environment.that depends on the lexical environment. refer scope.js
